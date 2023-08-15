@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript.css">
+    <title>Visualg</title>
+</head>
+<body>
+    <div>
+        <h1><img src="../imagens/titulojavascript.png" alt="js" class="js"></h1>
+        <h2><a href="../index.html"><button class="glow-on-hover">Voltar</button></a></h2>
+        <h3><br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+            Digite a distância total percorrida em Km:</h3>
+        <input class="input" id="distancia" type="number" placeholder="Digite Aqui"></input>
+        <h3>Digite o total de combustível gasto em Litros:</h3>
+        <input class="input" id="gasolina" type="number" placeholder="Digite Aqui"></input><br><br><br><br>
+        <button class="botao" onclick="resultado()">Resultado</button><br>
+        <p id="r"></p><br><br><br>
+        <h3>Tela do Javascript</h3><br>
+        <img src="../imagens/Captura de tela 2023-08-14 222847.png" alt="print" class="print">
+
+    </div>
+</body>
+</html>
+<script>
+function resultado(){
+    var distancia = Number(document.getElementById("distancia").value)
+    var gasolina = Number(document.getElementById("gasolina").value)
+
+    resultado =  distancia/gasolina
+
+    document.getElementById("r").innerHTML = "O consumo de combustível por quilometragem: "+ resultado +"km/l"
+}
+</script>
